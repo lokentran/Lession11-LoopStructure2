@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumNumbers() {
+            let n = +prompt("Nhập n trong đó n là n số chia hết cho 7 đầu tiên");
+            let number = 1 , i=1, sum = 0;
+
+            while(i <= n) {
+                if(number % 7 == 0) {
+                    document.write(`${number},`);
+                    sum += number;
+                    i++;
+                }
+                number++;
+            }
+           
+            document.write(`<br> Tổng ${n} số chia hết cho 7 đầu tiên là: sum = ${sum}`);
+
+        }
+        sumNumbers();
+    </script>
+</body>
+</html>
