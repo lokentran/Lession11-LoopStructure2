@@ -9,19 +9,6 @@
     
 <script>
 
-    // let count= +prompt("Nhập n trong đó n la n số đầu tiên chia hết cho 15 có 3 chữ số bắt đầu từ 100:");
-    // let i=2, number = 2;
-
-    // while( i < count) {
-    //     if(number % i == 0) {
-    //         document.write(`${number},`);
-    //         i++;
-    //     }
-
-        
-    //     number++;
-    // }
-     
     function isPrime(number) {
         if(number < 2) {
             return false;
@@ -31,11 +18,12 @@
             for (let i = 2; i < number; i++) {
                 if(number % i == 0) {
                     return false;
-                } else {
-                    return true;
-                }          
+                }
+                
             }
+            return true;
         }
+        
     }  
 
 

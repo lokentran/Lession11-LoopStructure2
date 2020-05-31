@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    function printNumbers() {
+        let n = +prompt("Nhập vào n trong đó n là n số bắt đầu từ 1");
+        let strNumber = "";
+        for (let i = 1; i <= n; i++) {
+                if(i % 15 == 0) {
+                    strNumber = "FizzBuzz";
+                } 
+                else if(i % 5 == 0) {
+                    strNumber = "Buzz";
+                } else if(i % 3 == 0) {
+                    strNumber = "Fizz";
+                } else {
+                    strNumber = i;
+                }
+
+           console.log(`${strNumber} <br>`);
+        }
+            
+    }
+
+    printNumbers();
+</script>
+
+</body>
+</html>
