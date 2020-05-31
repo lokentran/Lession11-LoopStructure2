@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+    // let count= +prompt("Nhập n trong đó n la n số đầu tiên chia hết cho 15 có 3 chữ số bắt đầu từ 100:");
+    // let i=2, number = 2;
+
+    // while( i < count) {
+    //     if(number % i == 0) {
+    //         document.write(`${number},`);
+    //         i++;
+    //     }
+
+        
+    //     number++;
+    // }
+     
+    function isPrime(number) {
+        if(number < 2) {
+            return false;
+        } else if(number == 2) {
+            return true;
+        } else {
+            for (let i = 2; i < number; i++) {
+                if(number % i == 0) {
+                    return false;
+                } else {
+                    return true;
+                }          
+            }
+        }
+    }  
+
+
+    let count= +prompt("Nhập n trong đó n là n số nguyên tố đầu tiên");
+
+    let j = 1;
+    let number = 1;
+    while(j <= count) {
+        if(isPrime(number)) {
+            document.write(`${number},`);
+            j++;
+        }
+        number++;
+    }
+
+
+
+   
+    
+    
+
+
+</script>
+
+
+</body>
+</html>
